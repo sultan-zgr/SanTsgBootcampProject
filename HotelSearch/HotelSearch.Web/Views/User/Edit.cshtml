@@ -1,0 +1,36 @@
+﻿@model HotelSearch.Domain.Entities.User
+
+<form method="post">
+    <h1> Yeni Kullanıcı Ekle</h1>
+    <div asp-validation-summary="All"></div>
+
+    <div>
+        <label asp-for=Username></label>
+        <input asp-for="Username" />
+        <span asp-validation-for="Username"></span>
+    </div>
+     <div>
+        <label asp-for=Password></label>
+        <input asp-for="Password"/>
+        <span asp-validation-for="Password"></span>
+    </div>
+     <div>
+        <label asp-for=Email></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+     <div>
+        <label asp-for=Registration></label>
+        <input asp-for="Registration" />
+        <span asp-validation-for="Registration"></span>
+    </div>
+     <div>
+        <label asp-for=Situation></label>
+        <input asp-for="Situation" />
+        <span asp-validation-for="Situation"></span>
+    </div>
+    <button type="submit" class="kaydetmeButonu">Kaydet</button>
+    <button type="reset" class="kaydetmeButonu">Reset</button>
+    <a asp-controller="User" asp-action="Index">Listeye geri dön</a>
+    </form>
+
