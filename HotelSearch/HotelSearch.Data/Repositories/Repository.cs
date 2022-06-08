@@ -60,5 +60,11 @@ namespace HotelSearch.Data.Repositories
         {
             return _context.SaveChanges() > 0;
         }
+
+        public void Update(T entity)
+        {
+            _context.Set<T>().Update(entity);
+        }
+
     }
 }

@@ -15,5 +15,10 @@ namespace HotelSearch.Data.Repositories.Interfaces
         {
             throw new NotImplementedException();
         }
+
+        public void Update(User user)
+        {
+            _context.Update(user);
+        }
     }
 }

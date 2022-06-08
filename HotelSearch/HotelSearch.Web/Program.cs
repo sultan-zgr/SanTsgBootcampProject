@@ -23,4 +23,5 @@ namespace HotelSearch.Web
                     webBuilder.UseStartup<Startup>();
                 });
     }
+
 }

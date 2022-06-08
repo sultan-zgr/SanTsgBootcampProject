@@ -1,0 +1,5 @@
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Aplication\obj\Debug\netcoreapp3.1\HotelSearch.Application.csproj.AssemblyReference.cache
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Aplication\obj\Debug\netcoreapp3.1\HotelSearch.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Aplication\obj\Debug\netcoreapp3.1\HotelSearch.Application.AssemblyInfoInputs.cache
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Aplication\obj\Debug\netcoreapp3.1\HotelSearch.Application.AssemblyInfo.cs
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Aplication\obj\Debug\netcoreapp3.1\HotelSearch.Application.csproj.CoreCompileInputs.cache

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelSearch.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Controller // Ülke filtresi
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -20,6 +20,7 @@ namespace HotelSearch.Web.Controllers
 
         public IActionResult Index()
         {
+           
             return View();
         }
 

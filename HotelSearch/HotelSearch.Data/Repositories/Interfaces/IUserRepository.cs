@@ -9,5 +9,6 @@ namespace HotelSearch.Data.Repositories.Interfaces
     {
 
         void Remove(IEnumerable<User> user);
+        void Update(User user);
     }
 }
