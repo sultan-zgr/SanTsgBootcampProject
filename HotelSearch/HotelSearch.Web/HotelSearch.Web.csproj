@@ -15,11 +15,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HotelSearch.Aplication\HotelSearch.Application.csproj" />
     <ProjectReference Include="..\HotelSearch.Data\HotelSearch.Data.csproj" />
     <ProjectReference Include="..\HotelSearch.Domain\HotelSearch.Domain.csproj" />
+    <ProjectReference Include="..\HotelSearch.Shared\HotelSearch.Shared.csproj" />
   </ItemGroup>
 
 </Project>

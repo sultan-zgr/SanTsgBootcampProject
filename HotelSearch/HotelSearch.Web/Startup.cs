@@ -1,5 +1,8 @@
+using HotelSearch.Application.Interfaces;
+using HotelSearch.Application.Services;
 using HotelSearch.Data;
 using HotelSearch.Data.Repositories.Interfaces;
+using HotelSearch.Shared.SettingsModels;
 using HotelSearch.Web.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +41,9 @@ namespace HotelSearch.Web
             services.AddTransient<IUow, Uow>();
             services.AddTransient<IUserRepository, UserRepository>();
 
+            services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+            services.AddScoped<IEmailServices, EmailService>();
+
 
         }
 
@@ -58,7 +64,7 @@ namespace HotelSearch.Web
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCookiePolicy();
             app.UseRouting();
 
             app.UseAuthorization();

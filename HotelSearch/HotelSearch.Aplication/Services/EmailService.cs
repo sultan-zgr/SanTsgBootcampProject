@@ -1,10 +1,9 @@
 ﻿using HotelSearch.Application.Interfaces;
 using HotelSearch.Application.Models;
 using HotelSearch.Shared.SettingsModels;
-using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.Extensions.Options;
 using MimeKit;
-using System.Net.Mail;
 using System.Threading.Tasks;
 
 namespace HotelSearch.Application.Services

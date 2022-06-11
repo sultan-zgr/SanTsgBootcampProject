@@ -82,3 +82,12 @@ C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\ob
 C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\obj\Debug\netcoreapp3.1\Razor\Views\User\Create.cshtml.g.cs
 C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\obj\Debug\netcoreapp3.1\Razor\Views\User\Edit.cshtml.g.cs
 C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\obj\Debug\netcoreapp3.1\Razor\Views\User\Delete.cshtml.g.cs
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\HotelSearch.Application.dll
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\HotelSearch.Shared.dll
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\HotelSearch.Application.pdb
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\bin\Debug\netcoreapp3.1\HotelSearch.Shared.pdb
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\obj\Debug\netcoreapp3.1\Razor\Views\Hotel\Index.cshtml.g.cs
+C:\Users\sulta\source\repos\SanTsgBootcampProject\HotelSearch\HotelSearch.Web\obj\Debug\netcoreapp3.1\Razor\Views\Hotel\HotelList.cshtml.g.cs

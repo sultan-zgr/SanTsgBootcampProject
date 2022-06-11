@@ -22,14 +22,17 @@ namespace HotelSearch.Application.Services
 
         public async Task CreateUser(User user)
         {
+            
             _uow.Users.Add(user);
 
-            MailRequest mail = new MailRequest();
+            MailRequest mail = new MailRequest()
             {
-               
-            };
-          
+                Body = "Kaydiniz basariyla alinmistir",
+                Subject = "DiyetisyeniSec Kayit Onayi",
+                ToEmail = user.Email
 
+            };
+         
             await _emailServices.SendEmailAsync(mail);
             _uow.Complete();
             _logger.LogInformation("Eklendi {@user}", user);

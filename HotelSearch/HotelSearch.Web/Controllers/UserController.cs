@@ -1,10 +1,14 @@
-﻿using HotelSearch.Data;
+﻿using HotelSearch.Application.Interfaces;
+using HotelSearch.Application.Models;
+using HotelSearch.Data;
 using HotelSearch.Data.Repositories.Interfaces;
 using HotelSearch.Domain.Entities;
 using HotelSearch.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace HotelSearch.Web.Controllers
 {
@@ -12,13 +16,15 @@ namespace HotelSearch.Web.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly HotelSearchContext _context;
+        private readonly IEmailServices _emailservices;
         private readonly ILogger<UserController> _logger;
-             
-        public UserController(IUserRepository UserRepository, HotelSearchContext context, ILogger<UserController> logger)
+
+        public UserController(IUserRepository UserRepository, HotelSearchContext context, ILogger<UserController> logger, IEmailServices emailservices)
         {
             _userRepository = UserRepository;
             _context = context;
             _logger = logger;
+            _emailservices = emailservices;
         }
 
         public IActionResult Index()
@@ -33,13 +39,23 @@ namespace HotelSearch.Web.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(User user)
+        public async Task<IActionResult> Create(User user)
         {
+            MailRequest mail = new MailRequest()
+            {
+                Body = "Kaydiniz basariyla alinmistir",
+                Subject = "DiyetisyeniSec Kayit Onayi",
+                ToEmail = user.Email
+
+            };
+
 
             if (ModelState.IsValid)
             {
+                user.Registration = DateTime.Now;
                 _userRepository.Add(user);
                 _userRepository.SaveAll("Index");
+                await _emailservices.SendEmailAsync(mail);
             }
             return View(user);
         }
